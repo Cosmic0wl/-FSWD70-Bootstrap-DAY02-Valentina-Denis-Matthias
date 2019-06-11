@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+ <style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  
+  width: 70%;
+  border-left: none;
+  
+}
+.img{
+  width: 220px;
+  height: 280px
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="dropdown">
+  <button class="btn btn-primary bg-success dropdown-toggle" type="button" data-toggle="dropdown">The Lord of the Rings
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu bg-dark">
+    <li><a href="advanced-day02-matthias.html">Home</a></li>
+    <li><a href="actors.html">Actors</a></li>
+    <li><a href="others.html">Prequels</a></li>
+  </ul>
+</div>
+</nav>
+
+<div class="container">
+
+<h2>The Lord of the Rings:Trilogy</h2>
+
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, '1')" id="defaultOpen">Fellowship of the Ring</button>
+    <button class="tablinks" onclick="openCity(event, '2')">The two Towers</button>
+    <button class="tablinks" onclick="openCity(event, '3')">The Return of the King</button>
+
+  </div>
+
+  <div id="1" class="tabcontent">
+    <h3>The Lord of the Rings: Fellwship of the Ring</h3>
+    <img class="img" src="https://upload.wikimedia.org/wikipedia/en/9/9d/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29_theatrical_poster.jpg">
+    <p>The Lord of the Rings: The Fellowship of the Ring is a 2001 epic fantasy adventure film directed by Peter Jackson based on the first volume of J. R. R. Tolkien's The Lord of the Rings. It is the first instalment in the The Lord of the Rings trilogy, and was followed by The Two Towers (2002) and The Return of the King (2003), based on the second and third volumes of The Lord of the Rings.
+
+Set in Middle-earth, the story tells of the Dark Lord Sauron (Sala Baker), who is seeking the One Ring. The Ring has found its way to the young hobbit Frodo Baggins (Elijah Wood). The fate of Middle-earth hangs in the balance as Frodo and eight companions who form the Fellowship of the Ring begin their journey to Mount Doom in the land of Mordor, the only place where the Ring can be destroyed.
+
+Released on 10 December 2001, the film was highly acclaimed by critics and fans alike, who considered it to be a landmark in filmmaking and an achievement in the fantasy film genre. It has continued to be featured on critic lists of the greatest fantasy films ever made, as of 2017. The film earned over $871 million worldwide and became the second highest-grossing film of 2001 in the US and worldwide (behind Harry Potter and the Philosopher's Stone).
+
+It was nominated for thirteen Oscars at the 74th Academy Awards ceremony, including Best Picture, Best Director, and Best Supporting Actor for McKellen, winning four, for Best Cinematography, Best Makeup, Best Original Score, and Best Visual Effects. It also won four British Academy Film Awards, including Best Film and Best Director BAFTA awards. The Special Extended Edition was released on DVD on 12 November 2002 and on Blu-ray on 28 June 2011. In 2007, The Fellowship of the Ring was voted No. 50 on the American Film Institute's list of 100 greatest American films. The AFI also voted it the second greatest fantasy film of all time during their 10 Top 10 special. The film ranks #24 on Empire's 2008 list of the 500 greatest movies of all time.</p>
+  </div>
+
+  <div id="2" class="tabcontent">
+    <h3>The Lord of the Rings: The two Towers</h3>
+    <img class="img" src="https://upload.wikimedia.org/wikipedia/en/a/ad/Lord_of_the_Rings_-_The_Two_Towers.jpg">
+    <p>The Lord of the Rings: The Two Towers is a 2002 epic fantasy adventure film directed by Peter Jackson and based on the second volume of J. R. R. Tolkien's The Lord of the Rings. It is the second instalment in The Lord of the Rings trilogy, preceded by The Fellowship of the Ring (2001) and concluding with The Return of the King (2003).
+
+Continuing the plot of The Fellowship of the Ring, the film intercuts three storylines. Frodo and Sam continue their journey towards Mordor to destroy the One Ring, meeting and joined by Gollum, the ring's former owner. Aragorn, Legolas, and Gimli come to the war-torn nation of Rohan and are reunited with the resurrected Gandalf, before fighting at the Battle of Helm's Deep. Merry and Pippin escape capture, meet Treebeard the Ent, and help to plan an attack on Isengard.
+
+Meeting high critical acclaim, the film was an enormous box-office success, earning over US$926 million worldwide, and is also the highest-grossing film of 2002 (inflation-adjusted, it is the 62nd-most successful film in North America[9]). The film won numerous accolades and was nominated for six Academy Awards, including Best Picture, and won Best Visual Effects and Best Sound Editing.</p> 
+  </div>
+
+  <div id="3" class="tabcontent">
+    <h3>The Lord of the Rings: Return of the King</h3>
+    <img class="img" src="https://upload.wikimedia.org/wikipedia/en/9/9d/Lord_of_the_Rings_-_The_Return_of_the_King.jpg">
+    <p>The Lord of the Rings: The Return of the King is a 2003 epic fantasy adventure film co-produced, co-written, and directed by Peter Jackson based on the second and third volumes of J. R. R. Tolkien's The Lord of the Rings. It is the last instalment in The Lord of the Rings trilogy, following The Fellowship of the Ring (2001) and The Two Towers (2002), preceding The Hobbit film trilogy (2012–14).
+
+Released on 17 December 2003, The Lord of the Rings: The Return of the King became one of the most critically and commercially successful films of all time, and is considered one of the greatest films ever made.[9] It was the second film to gross $1 billion worldwide ($1.12 billion), becoming the highest-grossing film released by New Line Cinema, as well as the biggest financial success for Time Warner in general at the time. The film was the highest-grossing film of 2003 and, by the end of its theatrical run, the second highest-grossing film in history. As of May 2019, it is the twenty fourth highest-grossing film of all time.
+
+At the 76th Academy Awards, it won all 11 Academy Awards for which it was nominated, therefore holding the record for the highest clean sweep at the Oscars. The wins included the award for Best Picture, the first time a fantasy film had done so;[10] it was also the second sequel to win Oscars for Best Picture and Best Director (following The Godfather Part II). The film jointly holds the record for most Academy Awards won by a single film with Ben-Hur (1959) and Titanic (1997).</p>
+  </div>
+
+
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+</div>
+
+
+</body>
+</html>

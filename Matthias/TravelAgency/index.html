@@ -1,13 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mount Everest</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+     
+  }
+
+  .img-fluid{
+    height: 10em;
+    width: 25em;
+  }
+
+  .checked {
+  color: orange;
+}
+
+  </style>
+
 </head>
 <body>
+
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Mount Everest</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Hotels</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Destinations</a>
+    </li>
+  </ul>
+</nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2017/11/la-hollywood-PAGE-2017.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h2>Los Angeles</h2>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.wien.info/media/images/40715-volksgarten-mit-museen-parlament-sommer-garten-3to2.jpeg/image_teaser-all" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h2>Vienna!</h2>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.visitbritain.com/sites/default/files/styles/consumer_campaigns_hero_mobile/public/paragraphs_bundles/campaign_offer/images/london_0.jpg?itok=jXRIbgYf" alt="New York" width="1100" height="500">
+       <div class="carousel-caption">
+        <h2>London</h2>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="container">
+
+  <h3 class="text-center">Recommendations</h3>
+  
+    <div class="row">
+      <div class="col-lg-6 col-md-6 mb-lg-20">
+        
+        <img class="img-fluid" src="https://images.ctfassets.net/knd0dn3kghk7/7B497TvlnOKyOe8m0g0WKs/0bec609f19d05df5dd6cd1881256c169/getty-625327224.jpg?w=946&h=532&fit=thumb">
+        <span class="d-flex p-2"><h3>Caribbean</h3><button type="button" class="btn btn-success ml-5">Book</button></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        
+        <img class="img-fluid" src="https://authentic-scandinavia.com/destinations/norway-tours/_/image/972bc745-f6bd-4bc9-9645-f3bbb5a5d9d1:fae904c3cbd32d7dca41032fbae4713deb81dbd2/width-1140/Norway_Photo_Frithjof_Fure_-__www.fjordnorway.com___-_Aurlandsfjord.jpg">
+        <span class="d-flex p-2"><h3>Norway</h3><button type="button" class="btn btn-success ml-5">Book</button></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <img class="img-fluid" src="https://www.theinvisibletourist.com/wp-content/uploads/2017/04/featured_85.jpg">
+         <span class="d-flex p-2"><h3>Japan</h3><button type="button" class="btn btn-success ml-5">Book</button></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star"></span>
+      </div>
+
+      <div class="col-lg-6 col-md-6">    
+        <img class="img-fluid" src="https://www.telegraph.co.uk/content/dam/Travel/2019/March/Kirkjufell-iStock-959966730.jpg?imwidth=450">
+       <span class="d-flex p-2"><h3>Iceland</h3><button type="button" class="btn btn-success ml-5">Book</button></span>
+       <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      </div>
+      
+  </div>
+
+  
+</div>
+<nav class="navbar navbar-expand-sm bg-success navbar-dark justify-content-around">
+  <div class="form-group">
+    <label for="inputlg">Feedback</label>
+    <input class="form-control input-lg" id="inputlg" type="text">
+    <button type="button" class="btn btn-link bg-dark">Submit</button>
+  </div>
+   <div class="form-group">
+    <label for="inputlg">About my Travels</label>
+    <input class="form-control input-lg" id="inputlg" type="text">
+    <button type="button" class="btn btn-link bg-dark">Submit</button>
+  </div>
+  
+</nav>
 
 
 </body>
