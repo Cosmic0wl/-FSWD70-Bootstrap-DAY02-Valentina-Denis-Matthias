@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+					<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+					<title>bootstrap-Music-a1</title>
+          <style rel="stylesheet" type="text/css">
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: auto;
+  background-color: black;
+}
+
+p{
+  float: right;
+  color: white;
+ }
+
+ h3{
+  color: white;
+ }
+
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Who')" id="defaultOpen">Who is this?</button>
+  <button class="tablinks" onclick="openCity(event, 'Quotes')">Quotes</button>
+</div>
+
+<div id="Who" class="tabcontent">
+  <h3>Spongebozz</h3>
+  <img src="sponge.jpg">
+  <p class="txt">ist ein deutscher Rapper ukrainisch-jüdischer Herkunft, der vor allem durch seine Aktivitäten als Battle-Rap-Künstler Bekanntheit erlangte. Sein Auftreten ist an die Zeichentrickfigur SpongeBob Schwammkopf angelehnt und vermischt diese mit Motiven des Gangsta-Raps. Dabei rappt er mit verstellter Stimme, die der Stimme SpongeBobs ähnlich klingen soll. Seit Anfang 2018 tritt Chpakov wieder hauptsächlich unter seinem zuvor genutzten Künstlernamen Sun Diego auf, wobei er unter diesem Namen mit seiner natürlichen Stimme rappt. Jetzt ist er als God of Battle bekannt.</p>
+  <br>
+  <br>
+</div>
+
+
+<div id="Quotes" class="tabcontent">
+  <h3>Quotes</h3>
+  <img src="pat.jpg">
+  <p>„Ich bin Thaddäus, er ist Thaddäus, wir beide sind Thaddäus!“</p>
+  <br>
+  <p>„Ist Mayonnaise auch ein Instrument?“</p>
+  <br>
+  <p>„Warum muss jede 11-minütige Sequenz meines Lebens zu einem Akt der Verzweiflung werden?“</p>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+</body>
+</html>
